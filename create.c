@@ -6,7 +6,7 @@
 /*   By: davgarci <davgarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/30 16:10:28 by davgarci          #+#    #+#             */
-/*   Updated: 2022/12/31 03:14:48 by davgarci         ###   ########.fr       */
+/*   Updated: 2022/12/31 16:43:48 by davgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,4 +56,17 @@ int	ft_lstsize(t_list *lst)
 		i++;
 	}
 	return (i);
+}
+
+void	ft_printlst(t_list *lst)
+{
+	int	i;
+
+	i = 0;
+	while (lst)
+	{
+		printf("Nodo: [%i] Content: [%i]\n", i, lst->nbr);
+		lst = lst->next;
+		i++;
+	}
 }
