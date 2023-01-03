@@ -6,7 +6,7 @@
 /*   By: davgarci <davgarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/30 16:58:35 by davgarci          #+#    #+#             */
-/*   Updated: 2022/12/31 03:17:26 by davgarci         ###   ########.fr       */
+/*   Updated: 2023/01/03 16:45:24 by davgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,6 @@ void	rotate_rr(t_list **head_a, t_list **head_b)
 	ptr2->next = head_a[0];
 	head_a[0]->next = NULL;
 	head_a[0] = ptr1;
-
 	ptr1 = head_b[0]->next;
 	ptr2 = head_b[0]->next;
 	while (ptr2->next != NULL)

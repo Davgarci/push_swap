@@ -6,7 +6,7 @@
 /*   By: davgarci <davgarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/30 21:53:38 by davgarci          #+#    #+#             */
-/*   Updated: 2022/12/31 03:14:23 by davgarci         ###   ########.fr       */
+/*   Updated: 2023/01/03 16:48:19 by davgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,7 +99,7 @@ int	parsing(int argc, char **argv)
 		}
 		while (argv[i][k] != '\0')
 		{
-			error_content(argv[i][k], argv[i][k+1]);
+			error_content(argv[i][k], argv[i][k + 1]);
 			k++;
 		}
 		k = 0;

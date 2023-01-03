@@ -6,7 +6,7 @@
 /*   By: davgarci <davgarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/30 16:10:28 by davgarci          #+#    #+#             */
-/*   Updated: 2022/12/31 16:43:48 by davgarci         ###   ########.fr       */
+/*   Updated: 2023/01/03 16:46:41 by davgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,6 @@ void	ft_printlst(t_list *lst)
 	i = 0;
 	while (lst)
 	{
-		printf("Nodo: [%i] Content: [%i]\n", i, lst->nbr);
 		lst = lst->next;
 		i++;
 	}

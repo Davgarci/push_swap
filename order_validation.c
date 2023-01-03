@@ -6,7 +6,7 @@
 /*   By: davgarci <davgarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/31 03:48:17 by davgarci          #+#    #+#             */
-/*   Updated: 2022/12/31 15:58:44 by davgarci         ###   ########.fr       */
+/*   Updated: 2023/01/01 18:33:00 by davgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,5 @@ int	order_validation(t_list *head_a)
 		ptr2 = ptr2->next;
 		ptr1 = ptr1->next;
 	}
-	printf("order val\n");
 	return (1);
 }

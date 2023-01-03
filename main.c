@@ -6,7 +6,7 @@
 /*   By: davgarci <davgarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/30 15:47:38 by davgarci          #+#    #+#             */
-/*   Updated: 2022/12/31 16:35:41 by davgarci         ###   ########.fr       */
+/*   Updated: 2023/01/03 17:03:24 by davgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,11 @@ int	main(int argc, char **argv)
 	parsing(argc, argv);
 	create(argc, head_a, argv);
 	doubles(head_a);
+	add_order(head_a);
 	len = ft_lstsize(head_a);
-	// printf("Stack-A: %i\nOrdered: %i\nMin: %i\nMax: %i\n\n", len,
-	// 	order_validation(head_a), find_min(head_a), find_max(head_a));
-	algorithm1(head_a, head_b);
-
-	//system("leaks -q push_swap");
+	if (len < 85)
+		algorithm1(&head_a, &head_b);
+	if (len >= 85)
+		algorithm2(&head_a, &head_b);
 	return (0);
 }
